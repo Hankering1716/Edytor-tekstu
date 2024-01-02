@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="1.css">
+        <script src="1.js" defer></script>
+        <meta name="viewport" content="width=device,width, initial-scale=1.0">
+        <link rel="icon" href="">
+        <meta name="description" content="to upper case, remove comma, usuń przecinek itp">
+        <meta name="keywords" content="witamy">
+        <title>Zmiana znaków</title>
+    </head>
+
+    <body>
+        <div id="TEXT">
+            <label for="tekst">Tekst który formatujesz:</label> <br>
+
+            <textarea rows='5' cols='100' id="MainText" placeholder="Tutaj umieść swój tekst..."></textarea><br>
+            <label for="guziki">Guziki które umożliwią tobie formatowanie tekstu</label> <br>
+            <div id="guziki" style="display:inline">
+                <button id='toUpperCase' onclick="toUpperCase()">Powiększ znaki</button>
+                <button id="toLowerCase" onclick="toLowerCase()">Zmniejsz znaki</button>
+                <button id='Gora' onclick="Gora()">Kazda 1 literka slowa większa</button>
+                <br> 
+                <button id="interpunkcyjne" onclick="interpunkcyjne()">Usuń znaki interpunkcyjne</button>
+                <button id="UsunLiterki" onclick="literki()">Usuń cyfry i znaki +=-</button>
+                <button id="literki" onclick="literki()">Usuń literki</button>
+                <br>
+                <button id="spolgloski" onclick="spolgloski()">Usun spółgłoski</button>
+                <button id="samogloski" onclick="samogloski()">Usun samogłoski</button>
+                <button id="spacje" onclick="spacje()">Usun spacje</button>
+                <br>
+
+                <button id="TwoWord" onclick="TwoWord()">Każda co 2-ga literka większa</button>
+
+
+                <br> <br>
+                <button id="UsunText" onclick="UsunText()">Usuń <input id="input40" placeholder="WPISZ TEXT..."> z tekstu</input> </button>
+                <br>
+                <button id="InputSpace" onclick="InputSpace()">Dodaj <input id="input1" cols="1" placeholder="WPISZ TEXT.."></input> do końca każdego zdania</button>
+                    <br>
+                <button id="InputSpaceOne" onclick="InputSpaceOne()">Dodaj <input id="input2" cols="1" placeholder="WPISZ TEXT..."></input> do początku każdego zdania</button>
+                <br>
+
+                
+
+
+                <div class="guziki-do-kopiowania-itd">
+                    <br>
+
+                    <div class="tooltip">
+                        <p id="tooltiptext" class="tooltiptext">Kliknij aby skopiować tekst</p>
+                        <button id="COPY" onclick="COPY()">Skopiuj tekst</button>
+                    </div>
+                        
+                    <div class="tooltip">
+                        <p id="tooltiptext" class="tooltiptext">Kliknij aby usunąć tekst</p>
+                        <button  id="DELETE" onclick="DELETE()">Usuń tekst</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
