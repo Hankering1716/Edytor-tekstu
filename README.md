@@ -1,4 +1,4 @@
-# Edytor-Kodu
+# Edytor-Tekstu
 Dzięki niemu będziesz mógł edytować kod jak tylko chcesz
 
 
