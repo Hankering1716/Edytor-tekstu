@@ -2,4 +2,5 @@
 Dzięki niemu będziesz mógł edytować kod jak tylko chcesz. Od ustawienia tekstu zglitchowanego zglitchowanego po naprawde szalone sZaLoNe zDaNiA!
 
 
-![image](https://github.com/Hankering1716/Edytor-Kodu/assets/116718014/b93452fc-fcf5-4ebc-b954-fe7e58bbba24)
+![image](https://github.com/Hankering1716/Edytor-Kodu/assets/116718014/e47caf01-6a55-4a46-b6da-2dc21fedaa05)
+
