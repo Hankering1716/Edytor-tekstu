@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="1.css">
+        <script src="1.js" defer></script>
+        <meta name="viewport" content="width=device,width, initial-scale=1.0">
+        <link rel="icon" href="">
+        <meta name="description" content="to upper case, remove comma, usuń przecinek">
+        <meta name="keywords" content="witamy">
+        <title>Zmiana znaków</title>
+    </head>
 
+    <body>
+        <!-- <div class="pasek">
+
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">
+                    <img src="pobierz.jpg">
+                </a>
+                <div id="choicemenu" class="dropdown-content">
+                  <a href="#c1">Category1</a>
+                  <a href="#c2">Category2</a>
+                  <a href="#c3">Category3</a>
+                  <a href="#c4">Category4</a>
+                  <a href="#c5">Category5</a>
+                  <a href="#c6">Category6</a>
+                  <a href="#c7">Category7</a>
+                  <a href="#c8">Category8</a>
+                </div> -->
+              <!-- </div> -->
+        
+        
+        
+        </div>
+        <div id="page-container">
+            <div id="content-wrap">
+        <div id="TEXT" >
+            <div class="TEXT1">
+            <p id="Tekst-Skopiowany"></p>
+            
+            <label for="tekst">Tekst który formatujesz:</label> <br>
+
+            <textarea rows='5' cols='100' id="MainText" placeholder="Tutaj umieść swój tekst..." spellcheck="false"></textarea><br>
+            </div>
+            <label for="guziki">Guziki które umożliwią tobie formatowanie tekstu</label> <br>
+            <div id="guziki" style="display:inline">
+                <button id='toUpperCase'   onclick="toUpperCase()">Powiększ znaki</button>
+                <button id="toLowerCase" onclick="toLowerCase()">Zmniejsz znaki</button>
+                <button id='Gora' onclick="Gora()">Kazda 1 literka slowa większa</button>
+                <br> 
+                <button id="interpunkcyjne" onclick="interpunkcyjne()">Usuń znaki interpunkcyjne</button>
+                <button id="UsunLiterki" onclick="literki()">Usuń cyfry i znaki +=-</button>
+                <button id="literki" onclick="literki()">Usuń literki</button>
+                <br>
+                <button id="spolgloski" onclick="spolgloski()">Usun spółgłoski</button>
+                <button id="samogloski" onclick="samogloski()">Usun samogłoski</button>
+                <button id="spacje" onclick="spacje()">Usun spacje</button>
+                <br>
+
+                <button id="TwoWord" onclick="TwoWord()">zDaNiE LiTeRoWe</button>
+                <button id="GLITCH" onclick="GLITCH()">Tekst typu GLITCH</button>
+                <button id="Tytul" onclick="Tytul()">Tekst tytułowy</button>
+                
+                <br><br>
+                <button id="UsunText" onclick="UsunText()">Usuń <input id="input40" placeholder="WPISZ TEXT..."> z tekstu (pojedynczo) </input> </button>
+
+                <button id="InputSpace" onclick="InputSpace()">Dodaj <input id="input1" cols="1" placeholder="WPISZ TEXT.."></input> do końca każdego zdania</button>
+
+                <button id="InputSpaceOne" onclick="InputSpaceOne()">Dodaj <input id="input2" cols="1" placeholder="WPISZ TEXT..."></input> do początku każdego zdania</button>
+                <br>
+                
+                
+
+
+                <div class="guziki-do-kopiowania-itd">
+                    <br>
+
+                    <div class="tooltip">
+                        <p id="tooltiptext" class="tooltiptext">Kliknij aby skopiować tekst</p>
+                        <button id="COPY" onclick="COPY()">Skopiuj tekst</button>
+                    </div>
+                        
+                    <div class="tooltip">
+                        <p id="tooltiptext" class="tooltiptext">Kliknij aby usunąć tekst</p>
+                        <button  id="DELETE" onclick="DELETE()">Usuń tekst</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+     </div></div>
+        <div class="wraper"> 
+        <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Autor</h4>
+                            <ul>
+                                <li><a target="_blank" href="https://github.com/Hankering1716">
+                                    Hankering1716
+                                </a></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="footer-col">
+                            <h4>Projekty</h4>
+                        </div>
+                        <div class="footer-col">
+                            <h4>das</h4>
+                        </div>
+                        <div class="footer-col">
+                            <h4>testy</h4>
+                        </div>
+                    </div>
+
+                </div>
+        </footer>
+    </div>
+    </body>
+</html>
