@@ -12,23 +12,15 @@
     </head>
 
     <body>
-        <!-- <div class="pasek">
+        <!-- <div class="margin">
+            <nav class="menu">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
 
-            <div class="dropdown">
-                <a href="#" class="dropdown-toggle">
-                    <img src="pobierz.jpg">
-                </a>
-                <div id="choicemenu" class="dropdown-content">
-                  <a href="#c1">Category1</a>
-                  <a href="#c2">Category2</a>
-                  <a href="#c3">Category3</a>
-                  <a href="#c4">Category4</a>
-                  <a href="#c5">Category5</a>
-                  <a href="#c6">Category6</a>
-                  <a href="#c7">Category7</a>
-                  <a href="#c8">Category8</a>
-                </div> -->
-              <!-- </div> -->
+            </nav>
+        </div> -->
         
         
         
@@ -37,12 +29,13 @@
             <div id="content-wrap">
         <div id="TEXT" >
             <div class="TEXT1">
-            <p id="Tekst-Skopiowany"></p>
+
             
             <label for="tekst">Tekst który formatujesz:</label> <br>
 
             <textarea rows='5' cols='100' id="MainText" placeholder="Tutaj umieść swój tekst..." spellcheck="false"></textarea><br>
             </div>
+            <p id="Tekst-Skopiowany"></p>
             <label for="guziki">Guziki które umożliwią tobie formatowanie tekstu</label> <br>
             <div id="guziki" style="display:inline">
                 <button id='toUpperCase'   onclick="toUpperCase()">Powiększ znaki</button>
@@ -63,13 +56,14 @@
                 <button id="Tytul" onclick="Tytul()">Tekst tytułowy</button>
                 
                 <br><br>
-                <button id="UsunText" onclick="UsunText()">Usuń <input id="input40" placeholder="WPISZ TEXT..."> z tekstu (pojedynczo) </input> </button>
+                <button id="UsunText" onclick="UsunText()">Usuń <input id="input40" placeholder="WPISZ TEXT..."> z tekstu</input> </button>
 
                 <button id="InputSpace" onclick="InputSpace()">Dodaj <input id="input1" cols="1" placeholder="WPISZ TEXT.."></input> do końca każdego zdania</button>
 
                 <button id="InputSpaceOne" onclick="InputSpaceOne()">Dodaj <input id="input2" cols="1" placeholder="WPISZ TEXT..."></input> do początku każdego zdania</button>
-                <br>
-                
+                <br> <br>
+                <button onclick="UsunTextPojedynczo()">Usuń <input id="input41" placeholder="WPISZ TEXT..."> z tekstu (pojedynczo) </button>
+                <button onclick="SrodekZdania()">Dodaj <input id="srodekzdania" placeholder="WPISZ TEXT..."> w środek zdania</button>
                 
 
 
