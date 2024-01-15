@@ -49,7 +49,7 @@ function UsunText() {
         var tekstowy = document.getElementById("MainText");
         
 
-        tekstowy.value = tekstowy.value.replace(input40.value, "");
+        tekstowy.value = tekstowy.value.replaceAll(input40.value, "");
 }
 function DELETE() {
 
@@ -82,9 +82,9 @@ function COPY() {
     // edycja <P>
     document.getElementById("Tekst-Skopiowany").innerHTML  = "✅ | Tekst Skopiowany!";
     var boks = document.getElementById("Tekst-Skopiowany");
-    if(boks.style.background = "red") {
-        return boks.style.background ="green"
-    }
+    boks.style.background = "green";
+
+
 
     setTimeout(() => {
         boks.style.display = 'none';
@@ -93,6 +93,7 @@ function COPY() {
     if(boks.style.display == "none") {
         return boks.style.display = "block"
     }
+
 }
 
 
@@ -107,7 +108,7 @@ function interpunkcyjne() {
 function literki() {
 
         var gluwny1 = document.getElementById("MainText");
-        gluwny1.value = gluwny1.value.replace(/[1234567890+-=]/gi, "")
+        gluwny1.value = gluwny1.value.replace(/[1234567890+-=]/g, "")
     }
 
 
@@ -181,10 +182,44 @@ function Tytul() {
         input33.value = input33.value.split(".").map(x=>  x.charAt(0).toUpperCase() +  x.toLowerCase().slice(1)).join(".");
 
         
-    }
+}
     
 
+function UsunTextPojedynczo() {
+        var input41 = document.getElementById("input41");
+        var tekstowy41 = document.getElementById("MainText");
+
+        tekstowy41.value = tekstowy41.value.replace(input41.value, "");
+}
 
 
 
 
+function SrodkiZdania(s) {
+        
+
+
+        return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+
+
+}
+
+function SrodkiZdania(s) {
+        
+
+
+        return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+
+
+}
+
+// to change
+function SrodekZdania() {
+
+
+        var input42 = document.getElementById("srodekzdania");
+        var tekstowy42 = document.getElementById("MainText");
+
+       tekstowy42.value = tekstowy42.value.SrodkiZdania("f")
+
+}
