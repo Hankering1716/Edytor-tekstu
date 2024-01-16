@@ -194,32 +194,17 @@ function UsunTextPojedynczo() {
 
 
 
-
-function SrodkiZdania(s) {
-        
-
-
-        return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
-
-
-}
-
-function SrodkiZdania(s) {
-        
-
-
-        return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
-
+function generator() {
+        let result = '';
+        const charakter = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        const charakterLength = charakter.length;
+        const ilosc = document.getElementById("input422").value;
+        let counter = 5;
+        while(counter<charakterLength) {
+                result += charakter.charAt(Math.floor(Math.random() * charakterLength));
+                counter += 1
+        }
+        return document.getElementById('MainText').value = result;     
 
 }
 
-// to change
-function SrodekZdania() {
-
-
-        var input42 = document.getElementById("srodekzdania");
-        var tekstowy42 = document.getElementById("MainText");
-
-       tekstowy42.value = tekstowy42.value.SrodkiZdania("f")
-
-}
