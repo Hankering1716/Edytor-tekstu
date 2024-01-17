@@ -35,6 +35,20 @@
 
             <textarea rows='5' cols='100' id="MainText" placeholder="Tutaj umieść swój tekst..." spellcheck="false"></textarea><br>
             </div>
+            <span id="iloscslow"></span>
+            <div class="guziki-do-kopiowania-itd">
+
+
+                <div class="tooltip">
+                    <p id="tooltiptext" class="tooltiptext">Kliknij aby skopiować tekst</p>
+                    <button id="COPY" onclick="COPY()">Skopiuj tekst</button>
+                </div>
+                    
+                <div class="tooltip">
+                    <p id="tooltiptext" class="tooltiptext">Kliknij aby usunąć tekst</p>
+                    <button  id="DELETE" onclick="DELETE()">Usuń tekst</button>
+                </div>
+
             <p id="Tekst-Skopiowany"></p>
             <label for="guziki">Guziki które umożliwią tobie formatowanie tekstu</label> <br>
             <div id="guziki" style="display:inline">
@@ -64,21 +78,12 @@
                 <br> <br>
                 <button onclick="UsunTextPojedynczo()">Usuń <input id="input41" placeholder="WPISZ TEXT..."> z tekstu (pojedynczo) </button>
                 <button onclick="generator()">Wygeneruj <input id="input422" type="number" name="foo" min="1" max="100" value="50"> cyfr oraz liczb</button>
+                
+
+                <!-- <button>Ostatnie wyniki:</button> -->
 
 
 
-                <div class="guziki-do-kopiowania-itd">
-                    <br>
-
-                    <div class="tooltip">
-                        <p id="tooltiptext" class="tooltiptext">Kliknij aby skopiować tekst</p>
-                        <button id="COPY" onclick="COPY()">Skopiuj tekst</button>
-                    </div>
-                        
-                    <div class="tooltip">
-                        <p id="tooltiptext" class="tooltiptext">Kliknij aby usunąć tekst</p>
-                        <button  id="DELETE" onclick="DELETE()">Usuń tekst</button>
-                    </div>
                     
                 </div>
             </div>
