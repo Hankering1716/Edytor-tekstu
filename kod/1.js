@@ -208,3 +208,32 @@ function generator() {
 
 }
 
+// glosnosc 11
+const textarea = document.getElementById("MainText");
+
+
+const characterCountDisplay  = document.getElementById('characterCount');
+
+textarea.addEventListener('input', updateCharacterCount);
+
+
+
+function updateCharacterCount() {
+        const textarea = document.getElementById("MainText");
+
+
+        const characterCountDisplay  = document.getElementById('characterCount');
+
+textarea.addEventListener('input', updateCharacterCount);
+
+        const tekst = textarea.value;
+        if(tekst.length==0) {
+                return tekst.length=0;
+        }
+
+        const characterCount = tekst.length;
+
+
+        iloscslow.textContent = `Ilość słów : ${characterCount}`
+}
+
