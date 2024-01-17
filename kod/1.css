@@ -245,7 +245,20 @@ html {
 }
   
 
+textarea {
+    background-color: gray;
+    
+}
 
+textarea::placeholder {
+    color:red;
+    font-size:15px;
+}
+#iloscslow {
+    border:1px solid green;
+    background-color: white;
+    color:black
+}
 
   
 /* .menu {
