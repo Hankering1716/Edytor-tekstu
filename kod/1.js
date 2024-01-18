@@ -195,15 +195,10 @@ function UsunTextPojedynczo() {
 
 
 function generator() {
-        let result = '';
-        const charakter = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-        const charakterLength = charakter.length;
-        const ilosc = document.getElementById("input422").value;
-        let counter = 5;
-        while(counter<charakterLength) {
-                result += charakter.charAt(Math.floor(Math.random() * charakterLength));
-                counter += 1
-        }
+        var input422 = document.getElementById("input422").value;
+
+        let result = (Math.random() * input422).toString(36).substring(12);
+
         return document.getElementById('MainText').value = result;     
 
 }
@@ -224,11 +219,11 @@ function updateCharacterCount() {
 
         const characterCountDisplay  = document.getElementById('characterCount');
 
-textarea.addEventListener('input', updateCharacterCount);
+        textarea.addEventListener('input', updateCharacterCount);
 
         const tekst = textarea.value;
         if(tekst.length==0) {
-                return tekst.length=0;
+                return characterCount.style.display='none';
         }
 
         const characterCount = tekst.length;
@@ -236,4 +231,23 @@ textarea.addEventListener('input', updateCharacterCount);
 
         iloscslow.textContent = `Ilość słów : ${characterCount}`
 }
+
+
+function count_word( val ){
+        var wom = val.match(/\S+/g);
+        return {
+                words : wom  ? wom.length : 0
+        };
+}
+
+        var textContent = document.getElementById("MainText");
+        var showWordCount = document.getElementById("countWord");
+
+                textContent.addEventListener("input",function() {
+                        var v = count_word(this.value);
+                        showWordCount.innerHTML = (
+                                "<br>Ilość wyrazów: "+ v.words
+                        );
+                },false )
+
 
