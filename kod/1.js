@@ -57,16 +57,26 @@ function DELETE() {
 
         
         document.getElementById("Tekst-Skopiowany").innerHTML  = " ❌ | Tekst usunięty!";
+        v = 0;
         var boksik = document.getElementById("Tekst-Skopiowany");
-        boksik.style.background = "red"
+        boksik.style.background = "red";
+
+
+        showWordCount.innerHTML = (
+                "<br>Ilość wyrazów: 0"
+
+        );
         
+        iloscslow.innerHTML = `Ilość słów : 0`
+
         setTimeout(() => {
             boksik.style.display = 'none';
             
         }, 5000);
-    
+        
+
         if(boksik.style.display == "none") {
-            return boksik.style.display = "block"
+            return     boksik.style.display = "block";
         }
     }
 
@@ -222,11 +232,10 @@ function updateCharacterCount() {
         textarea.addEventListener('input', updateCharacterCount);
 
         const tekst = textarea.value;
-        if(tekst.length==0) {
-                return characterCount.style.display='none';
-        }
 
-        const characterCount = tekst.length;
+
+ 
+        const characterCount = tekst.replace(/\s/g, "").length;
 
 
         iloscslow.textContent = `Ilość słów : ${characterCount}`
