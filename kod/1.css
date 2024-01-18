@@ -254,10 +254,14 @@ textarea::placeholder {
     color:red;
     font-size:15px;
 }
-#iloscslow {
+
+.iloscie {
+    border:1px solid black;
+    display:inline;
     border:1px solid green;
     background-color: white;
-    color:black
+    color:black;
+    min-width:30px;
 }
 
   
