@@ -204,14 +204,6 @@ function UsunTextPojedynczo() {
 
 
 
-function generator() {
-        var input422 = document.getElementById("input422").value;
-
-        let result = (Math.random() * input422).toString(36).substring(12);
-
-        return document.getElementById('MainText').value = result;     
-
-}
 
 // glosnosc 11
 const textarea = document.getElementById("MainText");
@@ -220,6 +212,7 @@ const textarea = document.getElementById("MainText");
 const characterCountDisplay  = document.getElementById('characterCount');
 
 textarea.addEventListener('input', updateCharacterCount);
+
 
 
 
@@ -260,3 +253,23 @@ function count_word( val ){
                 },false )
 
 
+
+
+function generator(length) {
+   var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzżźćńęąś0123456789";
+                let randomString = "";
+                for(let i = 0; i < length;i++) {
+                        randomString += characters[Math.floor(Math.random() * characters.length)];
+                        
+                } return randomString;
+                }                
+
+function generator1() {
+        var input422 = document.getElementById("input422").value;
+        showWordCount.innerHTML = (
+                `<br>Ilość wyrazów: 1`
+
+        );
+        iloscslow.innerHTML = `Ilość słów : ${input422}`
+        document.getElementById('MainText').value = generator(input422)
+}
