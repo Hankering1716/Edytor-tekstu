@@ -264,6 +264,15 @@ textarea::placeholder {
     min-width:30px;
 }
 
+.pasek {
+    border-bottom:1px solid red;
+}
+
+.napis {
+    font-size: 3vmax;
+    color:beige;
+    background-color: #5a01a7;
+}
   
 /* .menu {
 
