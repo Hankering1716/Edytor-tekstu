@@ -115,7 +115,7 @@ function interpunkcyjne() {
         }
 
 
-function literki() {
+function cyfry() {
 
         var gluwny1 = document.getElementById("MainText");
         gluwny1.value = gluwny1.value.replace(/[1234567890+-=]/g, "")
@@ -273,3 +273,25 @@ function generator1() {
         iloscslow.innerHTML = `Ilość słów : ${input422}`
         document.getElementById('MainText').value = generator(input422)
 }
+
+
+function getMiddle(s) {
+        return Math.floor(s.length / 2);
+}
+ 
+// Given string str
+
+//          getMiddle(s) + s[8]
+// Function Call
+function srodekzdania() { 
+
+        var input433 = document.getElementById("input433").value;
+
+        var zbior = getMiddle(input433);
+
+
+        document.getElementById('MainText').value =  document.getElementById('MainText').value[0] +  document.getElementById('MainText').value[1] + zbior; 
+        
+
+}
+
