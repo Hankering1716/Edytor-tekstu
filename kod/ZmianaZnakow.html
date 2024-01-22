@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <link rel="stylesheet" href="1.css">
         <script src="1.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,15 +13,11 @@
     </head>
 
     <body>
-        <!-- <div class="margin">
-            <nav class="menu">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-
-            </nav>
-        </div> -->
+        <div class="pasek">
+            <ul>
+                <li class="napis">Edytor kodu</li>
+            </ul>
+        </div>
 
         
         
@@ -33,7 +29,7 @@
                 <p id="Tekst-Skopiowany"></p>
 
             
-            <label for="tekst">Tekst który formatujesz:</label> <br>
+            <label for="tekst" id="'tekst">Tekst który formatujesz:</label> <br>
 
             <textarea rows='5' cols='100' id="MainText" placeholder="Tutaj umieść swój tekst..." spellcheck="false"></textarea><br>
             </div>
@@ -62,7 +58,7 @@
                 <button id='Gora' onclick="Gora()">Kazda 1 literka slowa większa</button>
                 <br> 
                 <button id="interpunkcyjne" onclick="interpunkcyjne()">Usuń znaki interpunkcyjne</button>
-                <button id="UsunLiterki" onclick="literki()">Usuń cyfry i znaki +=-</button>
+                <button id="UsunLiterki" onclick="cyfry()">Usuń cyfry i znaki +=-</button>
                 <button id="literki" onclick="literki()">Usuń literki</button>
                 <br>
                 <button id="spolgloski" onclick="spolgloski()">Usun spółgłoski</button>
@@ -83,7 +79,7 @@
                 <br> <br>
                 <button onclick="UsunTextPojedynczo()">Usuń <input id="input41" placeholder="WPISZ TEXT..."> z tekstu (pojedynczo) </button>
                 <button onclick="generator1()">Wygeneruj <input id="input422" type="number" name="foo" min="1" max="100" value="50"> cyfr oraz liczb</button>
-                <button>Dodaj <input id="input433" placeholder="WPISZ TEXT..."> w środek każdego zdania </button>
+                <button onclick="srodekzdania()">Dodaj <input id="input433" placeholder="WPISZ TEXT..."> w środek każdego zdania </button>
 
                 <!-- <button>Ostatnie wyniki:</button> -->
 
