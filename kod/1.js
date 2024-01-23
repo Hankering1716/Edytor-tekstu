@@ -283,15 +283,26 @@ function getMiddle(s) {
 
 //          getMiddle(s) + s[8]
 // Function Call
-function srodekzdania() { 
+function koniecslowa() { 
 
         var input433 = document.getElementById("input433").value;
 
-        var zbior = getMiddle(input433);
+ 
 
 
-        document.getElementById('MainText').value =  document.getElementById('MainText').value[0] +  document.getElementById('MainText').value[1] + zbior; 
+
+        document.getElementById('MainText').value =  document.getElementById("MainText").value.split("").map(x=>  x + input433+x.toLowerCase().slice(1)).join("");
         
 
 }
 
+
+function srodekzdania() {
+        var inputy4444 = document.getElementById("srodekzdaniainput");
+       
+        var tekstyy33 = document.getElementById("MainText");
+       
+        var zbior = getMiddle(inputy4444);
+
+        /*to change */
+}
