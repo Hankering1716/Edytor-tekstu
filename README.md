@@ -1,6 +1,5 @@
 # Edytor-Tekstu
-Dzięki niemu będziesz mógł edytować kod jak tylko chcesz. Od zmiany  tekstu  po zglitchowany po naprawde  sZaLoNe zDaNiA!
+✅📝 By this text editor you can adapt text like you want!
 
-Apka w edycji więc przepraszam za malutkie błędy jednak podstawowe funkcje apki powinny być już OK :) 
 ![image](https://github.com/Hankering1716/Edytor-Kodu/assets/116718014/e47caf01-6a55-4a46-b6da-2dc21fedaa05)
 
